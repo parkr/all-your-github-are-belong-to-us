@@ -1,0 +1,32 @@
+{
+  "name": "all-your-github-are-belong-to-us",
+  "version": "0.1.0",
+  "description": "Save all your GitHub data to one place, private & public. A Webhook.",
+  "main": "index.js",
+  "dependencies": {
+    "git-at-me": "0.0.2"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/parkr/all-your-github-are-belong-to-us"
+  },
+  "keywords": [
+    "github",
+    "aggregate",
+    "collect",
+    "data",
+    "bigdata",
+    "webhook",
+    "hook"
+  ],
+  "author": "Parker Moore",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/parkr/all-your-github-are-belong-to-us/issues"
+  },
+  "homepage": "https://github.com/parkr/all-your-github-are-belong-to-us"
+}
