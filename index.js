@@ -4,7 +4,7 @@
   var github = require('git-at-me');
 
   github({
-    token: require('./github-token'),
+    token: process.env.GITHUB_TOKEN,
     user: process.env.GITHUB_USERNAME,
     repo: process.env.GITHUB_REPOSITORY,
     skipHook: (process.env.AYGABTU_SKIP_HOOK || true),
