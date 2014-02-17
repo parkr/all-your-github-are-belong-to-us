@@ -7,6 +7,7 @@
     token: require('./github-token'),
     user: process.env.GITHUB_USERNAME,
     repo: process.env.GITHUB_REPOSITORY,
+    skipHook: (process.env.AYGABTU_SKIP_HOOK || true),
     // http://developer.github.com/v3/repos/hooks/#events
     events: JSON.parse(process.env.GITHUB_HOOK_EVENTS),
     // The URL that github will post to; should match your site url
