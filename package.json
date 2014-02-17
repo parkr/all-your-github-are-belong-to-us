@@ -4,7 +4,8 @@
   "description": "Save all your GitHub data to one place, private & public. A Webhook.",
   "main": "index.js",
   "dependencies": {
-    "git-at-me": "0.0.2"
+    "git-at-me": "0.0.2",
+    "express": "~3.4.8"
   },
   "devDependencies": {},
   "scripts": {
