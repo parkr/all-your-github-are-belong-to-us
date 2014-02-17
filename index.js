@@ -8,7 +8,7 @@
     user: process.env.GITHUB_USERNAME,
     repo: process.env.GITHUB_REPOSITORY,
     skipHook: (process.env.AYGABTU_SKIP_HOOK || true),
-    // http://developer.github.com/v3/repos/hooks/#events
+    // https://github.com/github/github-services/blob/3adc8da1485341316700b288c1dabc566e85fb96/lib/service.rb#L79
     events: JSON.parse(process.env.GITHUB_HOOK_EVENTS),
     // The URL that github will post to; should match your site url
     url: process.env.AYGABTU_URL + '/git-at-me/events',
