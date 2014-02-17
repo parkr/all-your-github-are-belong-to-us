@@ -24,11 +24,4 @@
     // Do something with release
   });
 
-  /* **Snip all the express configuration** */
-
-  server.get('index', function (req, res) {
-    res.render('index'); 
-  });
-
-  server.listen();
 })();
