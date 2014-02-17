@@ -12,7 +12,7 @@
       if(err) throw err;
       db.collection(event_name, function(err, collection){
         if(err) throw err;
-        collection.insert(info);
+        collection.insert(info, {w:1}, function(){ console.log('Handled a ' + event_name + ' event.'); });
       });
     });
   };
