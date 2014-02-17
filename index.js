@@ -10,7 +10,10 @@
     console.log("Connecting to MongoDB database: " + mongoDBURL);
     mongoClient.connect(mongoDBURL, function(err, db) {
       if(err) throw err;
-      db.collection(event_name).insert(info);
+      db.collection(event_name, function(err, collection){
+        if(err) throw err;
+        collection.insert(info);
+      });
     });
   };
 
